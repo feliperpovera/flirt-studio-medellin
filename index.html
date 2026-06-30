@@ -10,7 +10,7 @@
 <meta name="author" content="Flirt Studio Medellín" />
 <link rel="canonical" href="https://feliperpovera.github.io/flirt-studio-medellin/" />
 <link rel="icon" type="image/png" href="assets/favicon.png" />
-<link rel="apple-touch-icon" href="assets/favicon.png" />
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
 
 <!-- Structured data (LocalBusiness) -->
 <script type="application/ld+json">
@@ -77,7 +77,7 @@
     --script: 'Pinyon Script', cursive;
     --maxw: 1180px;
     --pad-x: max(clamp(18px, 5vw, 56px), env(safe-area-inset-left), env(safe-area-inset-right));
-    --header-h: 70px;
+    --header-h: 104px;
   }
 
   * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -150,7 +150,7 @@
   }
   .site-header.is-scrolled { background: rgba(16, 12, 14, 0.92); box-shadow: 0 8px 30px -16px rgba(0,0,0,0.8); }
   .brand { display: inline-flex; align-items: center; gap: 10px; }
-  .brand img { height: 44px; width: auto; filter: drop-shadow(0 2px 8px rgba(255,46,136,0.35)); }
+  .brand img { height: 80px; width: auto; filter: drop-shadow(0 2px 8px rgba(255,46,136,0.35)); }
 
   .nav-desktop { display: none; align-items: center; gap: 6px; }
   .nav-desktop a {
@@ -310,7 +310,7 @@
 
   /* ---------- Footer ---------- */
   .site-footer { padding: clamp(50px, 8vw, 80px) var(--pad-x) 40px; background: var(--bg-3); border-top: 1px solid rgba(255,255,255,0.06); }
-  .site-footer img.logo { height: 52px; width: auto; margin-bottom: 14px; }
+  .site-footer img.logo { height: 84px; width: auto; margin-bottom: 14px; }
   .site-footer .tagline { font-size: 14px; line-height: 1.6; color: var(--muted-4); max-width: 30ch; }
   .footer-col h4 { font-family: var(--serif); font-size: 16px; font-weight: 600; margin-bottom: 16px; color: var(--gold); }
   .footer-nav { display: flex; flex-direction: column; gap: 10px; }
@@ -342,6 +342,8 @@
     .menu-toggle { display: none; }
   }
   @media (max-width: 600px) {
+    :root { --header-h: 80px; }
+    .brand img { height: 60px; }
     .btn--sm .btn-label { display: none; }
     .btn--sm { padding: 11px; width: 44px; height: 44px; }
     .hero__cta .btn { width: 100%; }
@@ -370,7 +372,7 @@
 <!-- ============ HEADER ============ -->
 <header class="site-header" id="top">
   <a href="#inicio" class="brand" aria-label="Flirt Studio · inicio">
-    <img src="assets/flirt-logo.png" alt="Flirt Studio" width="66" height="44" />
+    <img src="assets/flirt-logo.png" alt="Flirt Studio" width="120" height="80" />
   </a>
 
   <nav class="nav-desktop" aria-label="Navegación principal">
@@ -650,7 +652,7 @@
   <div class="container">
     <div class="grid grid--footer">
       <div>
-        <img class="logo" src="assets/flirt-logo.png" alt="Flirt Studio" width="78" height="52" loading="lazy" />
+        <img class="logo" src="assets/flirt-logo.png" alt="Flirt Studio" width="126" height="84" loading="lazy" />
         <p class="tagline">El estudio webcam donde las mujeres construyen libertad financiera con acompañamiento real.</p>
       </div>
       <div class="footer-col">
