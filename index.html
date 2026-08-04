@@ -119,7 +119,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   }
 
   *{box-sizing:border-box;margin:0;padding:0}
-  html{scroll-behavior:smooth;background:var(--bg);overflow-x:hidden}
+  html{background:var(--bg);overflow-x:hidden}
   body{
     font-family:'Manrope',system-ui,-apple-system,sans-serif;
     background:transparent;
@@ -1057,7 +1057,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="socials">
           <a href="https://www.instagram.com/flirtagencia_ads" target="_blank" rel="noopener" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
           <a href="https://www.tiktok.com/@flirt_webcam" target="_blank" rel="noopener" aria-label="TikTok"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 3a5 5 0 0 0 4 4v3a8 8 0 0 1-4-1v6a6 6 0 1 1-6-6c.34 0 .67.03 1 .09V12a3 3 0 1 0 2 2.83V3h3z"/></svg></a>
-          <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="X"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-7.6 8.7L23 22h-6.8l-5.3-6.9L4.8 22H1.7l8.1-9.3L1 2h7l4.8 6.4L18.9 2zm-2.4 18h1.9L7.6 4H5.6l10.9 16z"/></svg></a>
           <a href="https://wa.me/573332268616?text=Hola%2C%20quiero%20info%20de%20Flirt%20Studio" id="wa-footer-icono" class="wa-click" data-wa-location="footer-icono" target="_blank" rel="noopener" aria-label="WhatsApp"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.5A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-2.9.9.9-2.8-.2-.3A8 8 0 1 1 12 20z"/></svg></a>
         </div>
       </div>
@@ -1374,6 +1373,33 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         link_url:a.href,
         link_text:(a.textContent||'').trim().slice(0,80)
       });
+    });
+  });
+
+  // ---------- Scroll suave robusto para anclas ----------
+  // Chrome cancela el scroll-behavior:smooth nativo cuando las imágenes lazy
+  // cambian la altura de la página a mitad de la animación. Este scroll propio
+  // recalcula el destino en cada frame, así siempre llega a la sección.
+  document.querySelectorAll('a[href^="#"]').forEach(a=>{
+    a.addEventListener('click',function(e){
+      const id=this.getAttribute('href');
+      if(id.length<2) return;
+      const el=document.querySelector(id);
+      if(!el) return;
+      e.preventDefault();
+      try{history.pushState(null,'',id);}catch(_){}
+      const from=window.scrollY, t0=performance.now(), dur=700;
+      const hd=document.querySelector('header');
+      const dest=()=>Math.max(0, el.getBoundingClientRect().top+window.scrollY-(hd?hd.offsetHeight:0)-10);
+      let done=false;
+      (function step(now){
+        const p=Math.min(1,(now-t0)/dur);
+        const ease=p<.5?2*p*p:1-Math.pow(-2*p+2,2)/2;
+        window.scrollTo({top: from+(dest()-from)*ease, behavior:'instant'});
+        if(p<1) requestAnimationFrame(step); else done=true;
+      })(t0);
+      // Seguro: si la animación se interrumpe (pestaña oculta, etc.), aterriza igual
+      setTimeout(()=>{ if(!done) window.scrollTo({top: dest(), behavior:'instant'}); }, dur+150);
     });
   });
 
