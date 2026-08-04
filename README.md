@@ -5,7 +5,7 @@ habitaciones, videos, filosofía del equipo, beneficios y contacto por WhatsApp.
 
 ## 🌐 Sitio en vivo
 
-**https://feliperpovera.github.io/flirt-studio-medellin/**
+**https://flirtstudiowebcam.com/**
 
 ## 📁 Estructura
 
