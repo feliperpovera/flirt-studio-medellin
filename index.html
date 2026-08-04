@@ -388,18 +388,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .reveal.in{opacity:1;transform:none}
 
   /* ---------- Responsive ---------- */
-  @media(max-width:900px){
-    .hero-grid,.about{grid-template-columns:1fr;gap:40px}
-    .hero-media{max-width:440px;margin:0 auto}
-    .values,.benefits-grid{grid-template-columns:1fr 1fr}
-    .quotes{grid-template-columns:1fr}
-    .gallery{grid-template-columns:1fr 1fr;grid-auto-rows:200px}
+  /* El menú completo no cabe entre 900 y 1150px: colapsa a hamburguesa antes */
+  @media(max-width:1150px){
     .nav-links{display:none}
     .burger{display:flex}
     .nav-links.open{
       display:flex;flex-direction:column;position:absolute;top:78px;left:0;right:0;
       background:rgba(12,7,16,.97);backdrop-filter:blur(20px);padding:24px;gap:20px;border-bottom:1px solid var(--border);
     }
+  }
+  @media(max-width:900px){
+    .hero-grid,.about{grid-template-columns:1fr;gap:40px}
+    .hero-media{max-width:440px;margin:0 auto}
+    .values,.benefits-grid{grid-template-columns:1fr 1fr}
+    .quotes{grid-template-columns:1fr}
+    .gallery{grid-template-columns:1fr 1fr;grid-auto-rows:200px}
   }
   @media(max-width:600px){
     .values,.benefits-grid{grid-template-columns:1fr}
