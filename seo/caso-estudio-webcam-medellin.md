@@ -61,3 +61,19 @@ KPIs: posición e impresiones (GSC, semanal), CTR (quincenal), reseñas GBP y cl
 
 ## Limitaciones
 SERP capturada en sesión con login (no incógnito); posiciones volátiles. Sin datos de enlaces ni CWV de campo todavía. No se garantizan posiciones ni plazos.
+
+## Actualización 13-nov-2026: enlaces verificados con bot (sin Ahrefs/Semrush)
+Fuente: búsquedas de menciones hechas a mano + `backlinks_bot.py` (62 páginas visitadas). Detalle en `enlaces-2026-11-13.csv`.
+
+| Dominio que enlaza | #1 Playhouse | #2 Imperium | Flirt |
+|---|---|---|---|
+| webcamcolombia.com.co (directorio del nicho) | nofollow | nofollow | — |
+| scam-detector.com | nofollow | — | — |
+| crwflags.com | follow | — | — |
+
+**Lectura:** los competidores tienen muy pocos enlaces externos verificables. La brecha de autoridad es **baja**, no alta como se estimó. Con competidores sólidos (4 y 5/16), la Fase 6 pasa a **diferenciar: cambio de formato + experiencia propia (ángulos 2 + 4)**, apoyado en las páginas long tail ya publicadas.
+
+**Outreach #1:** pedir a webcamcolombia.com.co (datos@webcamcolombia.com.co) que liste a Flirt. Publican estudios según lo que cada uno informa sobre pago, contrato y sede: enviarles 60%, pagos quincenales, tipo de contrato y sede Laureles.
+
+## Páginas de apoyo publicadas (13-nov-2026)
+/ser-modelo-webcam/, /estudio-webcam-medellin/, /empleo-modelo-webcam/, /cuanto-gana-una-modelo-webcam/ y /blog/ con 4 guías. Sitemap con 11 URLs reenviado; indexación solicitada para las 4 páginas.
