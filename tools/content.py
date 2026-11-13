@@ -9,7 +9,7 @@ PAGES = [
 "title": "Quiero ser modelo webcam: empieza sin experiencia en Medellín | Flirt",
 "desc": "¿Quieres ser modelo webcam? En Flirt Studio empiezas sin experiencia: capacitación, kit inicial gratuito y el 60% de tus sesiones. Aplica en 2 minutos.",
 "h1": "¿Quieres ser modelo webcam? Empieza sin experiencia",
-"lead": "Si estás pensando en ser modelo webcam, lo más importante es empezar en un lugar que te enseñe, te cuide y te pague lo justo. Así funciona en Flirt Studio, en Laureles, Medellín.",
+"lead": "Si estás pensando en ser modelo webcam, lo más importante es empezar en un lugar que te enseñe, te cuide y te pague lo justo. Así funciona ser modelo web cam en Medellín con Flirt Studio, en Laureles.",
 "wa_msg": "Hola, quiero ser modelo webcam", "wa_loc": "ser-modelo-webcam", "cta_label": "Quiero ser modelo webcam",
 "body": """
 <h2>Cómo ser modelo webcam en 4 pasos</h2>
@@ -40,20 +40,21 @@ PAGES = [
 ("¿Tengo que invertir dinero para empezar?", "No. Recibes un kit inicial gratuito y usas las habitaciones y equipos del estudio."),
 ("¿Puedo trabajar desde casa?", "No. En Flirt el trabajo es 100% presencial en nuestro estudio de Laureles, Medellín, a pasos del Metro Floresta."),
 ],
-"related": ["cuanto-gana-una-modelo-webcam", "empleo-modelo-webcam", "estudio-webcam-medellin"],
+"related": ["blog/que-es-ser-modelo-webcam", "cuanto-gana-una-modelo-webcam", "empleo-modelo-webcam"],
 },
 {
 "slug": "estudio-webcam-medellin",
-"title": "Estudio webcam en Medellín (Laureles, Metro Floresta) | Flirt Studio",
+"title": "Estudio webcam en Laureles, Medellín (Metro Floresta) | Flirt Studio",
 "desc": "Estudio webcam en Medellín, en Laureles a pasos del Metro Floresta. Habitaciones equipadas, el 60% de tus sesiones y pagos quincenales. Conoce el estudio.",
-"h1": "Estudio webcam en Medellín, en Laureles",
+"h1": "Estudio webcam en Laureles, Medellín",
 "lead": "Flirt Studio es un estudio webcam en el barrio Laureles de Medellín, a pasos de la estación Floresta del Metro. Un espacio seguro y profesional donde empiezas sin experiencia.",
 "wa_msg": "Hola, quiero conocer el estudio webcam en Laureles", "wa_loc": "estudio-webcam-medellin", "cta_label": "Agendar visita al estudio",
 "cta_text": "¿Quieres conocer el estudio antes de decidir? Agenda tu visita por WhatsApp.",
 "img": "room-1.jpg",
 "body": """
-<h2>Dónde estamos</h2>
+<h2>Estudios webcam en Laureles, Medellín, junto al Metro Floresta</h2>
 <p>Estamos en <strong>Laureles, Medellín</strong>, a pocas cuadras de la <strong>estación Floresta</strong> de la línea B del Metro. Es una zona tranquila, bien conectada y fácil de llegar desde cualquier parte del Valle de Aburrá. Te enviamos la ubicación exacta por WhatsApp al agendar tu visita.</p>
+<p>Si buscas un <strong>estudio webcam cerca de ti</strong> en la zona de Laureles, Estadio, Floresta o Calasanz, llegas caminando desde el Metro.</p>
 <h2>Qué es un estudio webcam y cómo funciona</h2>
 <p>Un estudio webcam es un espacio profesional donde las modelos transmiten en plataformas internacionales con el apoyo de un equipo. Tú haces tus sesiones; el estudio pone las habitaciones, la tecnología, la conexión, la formación y la seguridad. A cambio, el estudio se queda con una parte de los ingresos: en Flirt, <strong>tú recibes el 60% de tus sesiones</strong>.</p>
 <h2>Nuestras habitaciones</h2>
@@ -68,6 +69,7 @@ PAGES = [
 </ul>
 """,
 "faq": [
+("¿Hay un estudio webcam cerca de mí en Laureles?", "Sí. Flirt Studio queda en Laureles, Medellín, a pocas cuadras del Metro Floresta. Agenda tu visita por WhatsApp y te enviamos la ubicación."),
 ("¿Dónde queda Flirt Studio?", "En Laureles, Medellín, a pasos de la estación Floresta del Metro. La dirección exacta la compartimos por WhatsApp."),
 ("¿Puedo visitar el estudio antes de empezar?", "Sí. Agenda tu visita por WhatsApp, conoce las habitaciones y resuelve tus dudas sin compromiso."),
 ],
@@ -89,7 +91,7 @@ PAGES = [
 <strong>Pago:</strong> 60% de tus sesiones, pagos quincenales<br>
 <strong>Requisito:</strong> ser mayor de 18 años con documento vigente</p>
 </div>
-<h2>Casting abierto — agenda tu entrevista</h2>
+<h2>Trabajo de webcam en Medellín: casting abierto</h2>
 <p>El proceso es corto y sin compromiso: nos escribes, agendamos una entrevista en el estudio, conoces las habitaciones y te explicamos cómo funcionan los pagos y la capacitación.</p>
 {CTA}
 <h2>Qué ofrecemos</h2>
@@ -99,7 +101,7 @@ PAGES = [
 <li>Capacitación constante, clases de inglés y fotografía profesional.</li>
 <li>Trato justo: sin multas sin una razón clara y con acompañamiento real.</li>
 </ul>
-<h2>Requisitos del trabajo como modelo webcam</h2>
+<h2>Requisitos de este web cam trabajo</h2>
 <ul>
 <li>Mayor de 18 años (verificación de edad obligatoria).</li>
 <li>Buena actitud, constancia y ganas de aprender.</li>
@@ -146,6 +148,34 @@ PAGES = [
 ]
 
 POSTS = [
+{
+"slug": "blog/que-es-ser-modelo-webcam",
+"title": "¿Qué es ser modelo webcam? Guía del modelaje webcam | Flirt Studio",
+"desc": "Qué es modelo webcam, cómo funciona el modelaje webcam y cómo ser modelo webcam sin experiencia en un estudio de Medellín. Guía clara y sin rodeos.",
+"h1": "¿Qué es ser modelo webcam?",
+"lead": "Ser modelo webcam es transmitir en vivo en plataformas internacionales, conversar con tu audiencia y generar ingresos por tus sesiones. Aquí te explicamos cómo funciona el modelaje webcam, sin rodeos.",
+"wa_msg": "Hola, leí qué es ser modelo webcam y quiero más información", "wa_loc": "blog-que-es",
+"body": """
+<h2>Qué es modelo webcam</h2>
+<p>Una modelo webcam es una mujer mayor de edad que transmite en vivo desde una cámara en plataformas internacionales. Los usuarios la ven, conversan con ella por chat y pagan con propinas, shows privados o contenido. Ella decide qué muestra y qué no.</p>
+<h2>Cómo funciona el modelaje webcam</h2>
+<ol>
+<li><strong>Plataformas:</strong> sitios internacionales donde transmites y cobras.</li>
+<li><strong>Audiencia:</strong> sobre todo de Estados Unidos y Europa; por eso ayuda un inglés básico.</li>
+<li><strong>Ingresos:</strong> dependen de tus horas, tu constancia y tu conexión con los usuarios.</li>
+</ol>
+<h2>Trabajar sola o en un estudio</h2>
+<p>Puedes transmitir sola, pero necesitas equipos, conexión, privacidad y aprender todo por tu cuenta. En un estudio webcam el estudio pone la habitación, la tecnología y la formación, y tú recibes un porcentaje de lo que generas. En Flirt Studio ese porcentaje es el <strong>60%</strong>, con pagos quincenales.</p>
+{CTA}
+<h2>Cómo ser modelo webcam</h2>
+<p>Necesitas ser mayor de 18 años y tener ganas de aprender; la experiencia no es requisito. Te contamos el proceso completo en <a href="/ser-modelo-webcam/">cómo ser modelo webcam en 4 pasos</a>.</p>
+""",
+"faq": [
+("¿Qué es ser modelo webcam?", "Es transmitir en vivo en plataformas internacionales y generar ingresos por tus sesiones, decidiendo siempre tus propios límites."),
+("¿El modelaje webcam es lo mismo que el modelaje digital?", "Sí, son dos nombres para lo mismo: transmitir en vivo por cámara en plataformas internacionales."),
+],
+"related": ["ser-modelo-webcam", "cuanto-gana-una-modelo-webcam", "blog/como-proteger-tu-privacidad-como-modelo-webcam"],
+},
 {
 "slug": "blog/iluminacion-y-camara-para-modelos-webcam",
 "title": "Iluminación y cámara para modelos webcam: 8 tips prácticos | Flirt",
