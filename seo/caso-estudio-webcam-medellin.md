@@ -77,3 +77,11 @@ Fuente: búsquedas de menciones hechas a mano + `backlinks_bot.py` (62 páginas 
 
 ## Páginas de apoyo publicadas (13-nov-2026)
 /ser-modelo-webcam/, /estudio-webcam-medellin/, /empleo-modelo-webcam/, /cuanto-gana-una-modelo-webcam/ y /blog/ con 4 guías. Sitemap con 11 URLs reenviado; indexación solicitada para las 4 páginas.
+
+## Actualización 13-nov-2026: Bing Webmaster Tools conectado
+Propiedad importada desde GSC. "Backlinks To Any Site" confirma perfiles mínimos:
+- Playhouse: 4 dominios (crwflags.com, fotw.info, 50megs.com, fahnenversand.de — sitios de banderas, sin relevancia para el nicho).
+- Imperium: 1 dominio → **virtualconnection.com.co/directorio-de-estudios-webcam-en-colombia/** (estudio de Cali con directorio nacional). El bot verificó el enlace: **follow**.
+- Flirt: sin datos aún (sitio recién importado).
+
+**Outreach #2:** pedir a virtualconnection.com.co que incluya a Flirt en su directorio de estudios webcam de Colombia (es el único enlace follow y del nicho que tiene el #2).
